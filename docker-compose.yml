@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  application:
+    build:
+      context: ./
+    container_name: app
+    hostname: app
+    volumes:
+      - ./:/data/project
+    ports:
+      - 8085:80

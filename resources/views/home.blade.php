@@ -1,156 +1,238 @@
-@extends('layouts.header')
 
-@section('content')
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>肖石林</title>
-        <meta name="keywords" content="肖石林 Xiao's Lab 上海交通大学 ShiLin Xiao SJTU">
-    </head>
-    <body class="twoColElsLtHdr">
-
-    <div id="container">
-
-        <div id="mainContent">
-            <table width="80%" border="0" cellpadding="10">
-                <tbody><tr>
-                    <td><img src="xiaoshilin.jpg" width="400"></td>
-                    <td class="left"><h1><a href="http://baike.baidu.com/link?url=_Vcc62_o6UlJTQhy1sUt9g-KmRfKTgHKIpZAGrLTpMHGSyjwuvEQdNN_zT41M3paXkYzQqR0U5Ywd5E28yhUztyXypFLQMw3YGloxZO0eGY5faVaeUGCt4_bLtDhcTsh"><b>肖石林</b></a></h1><br>
-                        <div>教授，博士生导师</div>
-                        <div>中国通信学会光通信委员会委员<br>中国光学学会光子学专业委员会委员<br>中国兵工学会光学专业委员会委员<br>中国电子学会高级会员<br></div>
-                        <div>光传输网络、光电子器件和光电技术科研项目主持人</div>
-                        <br><br><br>上海市东川路800号交通大学电信群楼5-509室 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>邮政编码：200240<br>电话：(021)34205052  <br>E-mail:slxiao@sjtu.edu.cn</td>
-                </tr>
-                </tbody></table>
-            <table width="80%" border="0" cellspacing="0" cellpadding="5">
-                <tbody><tr>
-                    <td width="800"><h3>个人简介：</h3>肖石林，上海交大“区域光纤通信网与新型光通信系统国家重点实验室”教授、博士生导师。主要承担光通信网络与器件、光电子技术、光电传感技术等领域的研究和教学工作。是中国通信学会光通信委员会委员、中国光学学会光子学（纤维光学与集成光学）专业委员会委员、中国兵工学会光学专业委员会委员和中国电子学会高级会员。先后负责和主持了光传输网络（高速光传输、光交换网等）、光电子器件（光开关、光纤放大器等）和光电传感（光纤温度传感、光纤液位传感）等技术方面的二十多个科研项目。获省（部）级科技进步二等奖1项、科技进步三等奖3项、上海市发明专利申请一等奖1项。已发表学术论文60余篇，申报国家发明专利10余项。</td>
-                    <td>
-                </tr>
-                </tbody></table>
-            <!-- end #mainContent -->
-            <table> <tbody><tr><td width="200"><h3>教育背景：</h3></td></tr>
-                <tr>
-                    <td> 1985&nbsp;-1988&nbsp;</td><td>电子科技大学光电子技术系，硕士研究生。<br></td></tr>
-                <tr>
-                    <td> 1988&nbsp;-2000&nbsp;</td><td>信息产业部电子第三十四所（桂林光通信研究所），主要从事光通信、光电子器件与传感技术的研究。<br></td></tr>
-                <tr>
-                    <td> 1995&nbsp;</td><td>被评为高级工程师<br></td></tr>
-                <tr>
-                    <td> 1999&nbsp;</td><td>被破格评为研究员（教授级）高级工程师<br></td></tr>
-                <tr>
-                    <td> 2000&nbsp;-2003&nbsp;</td><td>上海交通大学通信与信息系统专业，博士研究生。<br></td></tr>
-
-                </tbody></table>
-
-            <table> <tbody><tr><td width="200"><h3>工作经历：</h3></td></tr>
-                <tr>
-                    <td> 1996&nbsp;</td><td>被聘为中国光学学会纤维光学与集成光学专业委员会委员。</td></tr>
-                <tr>
-                    <td> 2002&nbsp;</td><td>被聘为上海市科委“十五科技预见专家”。</td></tr>
-                <tr>
-                    <td> 2003&nbsp;</td><td>被聘为中国兵工学会光学专业委员会委员。</td></tr>
-                <tr>
-                    <td> 2007&nbsp;</td><td>被聘为中国通信学会光通信委员会委员。</td></tr>
-                </tbody></table>
-
-            <table> <tbody><tr><td width="200"> <h3> 获奖情况：</h3></td></tr>
-                <tr>
-                    <td> 1996&nbsp;</td><td>获电子工业部科技进步三等奖“1×8单模光开关”。</td></tr>
-                <tr>
-                    <td> 1997&nbsp;</td><td>被授予“桂林市优秀青年科技人才”称号。</td></tr>
-                <tr>
-                    <td> 2000&nbsp;</td><td>获广西桂林科学技术进步三等奖“掺铒光纤放大器(EDFA)”。</td></tr>
-                <tr>
-                    <td> 2003&nbsp;</td><td>获上海市大学生发明专利申请一等奖“多波长标记方式的光分组交换技术”。</td></tr>
-                <tr>
-                    <td> 2003&nbsp;</td><td>获上海科学技术进步二等奖“上海科技网改造为全光网”。</td></tr>
-                <tr>
-                    <td> 2004&nbsp;</td><td>获上海市科学技术进步三等奖“基于WDM的城域光网络设备研制与应用”。</td></tr>
-                <tr>
-                    <td> 2005&nbsp;</td><td>获上海市优秀博士论文奖“光标记交换及有关器件技术的研究与开发”。</td></tr>
-                </tbody></table>
-
-            <table> <tbody><tr><td width="200"> <h3> 科研项目：</h3></td></tr>
-                <tr>
-                    <td> 1&nbsp;</td><td>国家高技术发展计划863项目“光分组传输的关键技术研究”（#2006AA01Z251）。</td></tr>
-                <tr>
-                    <td> 2&nbsp;</td><td>国家高技术发展计划863项目“100GSamples/s全光模/数转换技术（#2007AA01Z271）。</td></tr>
-                <tr>
-                    <td> 3&nbsp;</td><td>国家自然科学基金重点项目“光分组交换关键技术与实验平台”（#60632010）。</td></tr>
-                <tr>
-                    <td> 4&nbsp;</td><td>××通信部十一五重点预研项目“XXXXX自动交换光网络设备技术”（#3060811001020202）。</td></tr>
-                </tbody></table>
-
-            <table> <tbody><tr><td width="200"> <h3> 专利：</h3></td></tr>
-                <tr>
-                    <td> 1&nbsp;</td><td>多波长标记光交换技术(ZL 01132092.3)。</td></tr>
-                <tr>
-                    <td> 2&nbsp;</td><td>自适应智能化光放大技术(ZL 01126962.6)。</td></tr>
-                <tr>
-                    <td> 3&nbsp;</td><td>采用多波长信头的光控光交换结构(ZL 02137619.0)。</td></tr>
-                <tr>
-                    <td> 4&nbsp;</td><td>可调光分路可扩展组播光交换结构(ZL 02137618.2)。</td></tr>
-                <tr>
-                    <td> 5&nbsp;</td><td>电视显示道路堵塞示意图的方法(ZL 94113985.9)。</td></tr>
-                <tr>
-                    <td> 6&nbsp;</td><td>光突发交换网络边缘节点结构及实现方法(ZL 200410052610.2)。</td></tr>
-                <tr>
-                    <td> 7&nbsp;</td><td>动态自适应突发组装方法(ZL 200410052609.X)。</td></tr>
-                <tr>
-                    <td> 8&nbsp;</td><td>支持阻塞模式和多路复用控制的光标记交换结构(ZL 200410089269.8)。</td></tr>
-                <tr>
-                    <td> 9&nbsp;</td><td>具有组播功能可扩展的全光交换结构(ZL 02136829.5)。</td></tr>
-                </tbody></table>
-
-        </div>
-        <!-- 这个用于清除浮动的元素应当紧跟 #mainContent div 之后，以便强制 #container div 包含所有的子浮动 --><br class="clearfloat">
-        <div id="footer">
-            <p align="center">
-                    <select name="select" width="100" onchange="check(this.value);">
-                        <option>友情链接</option>
-                        <option value="EE">EE department</option>
-                        <option value="SKL">State Key Lab</option>
-                        <option value="front">Front team</option>
-                        <option value="IEEE">IEEE</option>
-                        <option value="OSA">OSA</option>
-                        <option value="Nature_Photonics">Nature Photonics</option>
-                    </select></font>
-                <br><br>
-            </p>
-            <!-- end #footer --></div>
-        <!-- end #container --></div>
-    <script type="text/javascript">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>傻豹子</title>
+    <link type="text/css" rel="stylesheet" src="{{ asset('css/default.css') }}">
+    <style type="text/css">
         <!--
-        var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-        //-->
-    </script>
+        .STYLE1 {color: #666666}
+        -->
+        body{margin:0;padding:0;background:#ffe;font-size:14px;font-family:'微软雅黑','宋体',sans-serif;color:#231F20;overflow:auto}
+        a {color:#000;font-size:14px;}
+        #main{width:100%;}
+        #wrap{position:relative;margin:0 auto;width:1100px;height:680px;margin-top:10px;}
+        #text{width:400px;height:425px;left:60px;top:80px;position:absolute;}
+        #code{display:none;font-size:16px;}
+        #clock-box {position:absolute;left:60px;top:550px;font-size:28px;display:none;}
+        #clock-box a {font-size:28px;text-decoration:none;}
+        #clock{margin-left:48px;}
+        #clock .digit {font-size:64px;}
+        #canvas{margin:0 auto;width:1100px;height:680px;}
+        #error{margin:0 auto;text-align:center;margin-top:60px;display:none;}
+        .hand{cursor:pointer;}
+        .say{margin-left:5px;}
+        .space{margin-right:150px;}
+    </style>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/jscex.min.js') }}"></script>
+    <script src="{{ asset('js/jscex-parser.js') }}"></script>
+    <script src="{{ asset('js/jscex-jit.js') }}"></script>
+    <script src="{{ asset('js/jscex-builderbase.min.js') }}"></script>
+    <script src="{{ asset('js/jscex-async.min.js') }}"></script>
+    <script src="{{ asset('js/jscex-async-powerpack.min.js') }}"></script>
+    <script src="{{ asset('js/functions.js') }}"></script>
+    <script src="{{ asset('js/love.js') }}"></script>
+</head>
+<body>
+
+<div id="main">
+     <div id="wrap">
+        <div id="text">
+            <div id="code">
+                <span class="say">* 相遇相爱</span><br>
+                <span class="say"> </span><br>
+                <span class="say"> 傻孢子，我又开始想你了。</span><br>
+                <span class="say"> </span><br>
+                <span class="say"> 你我的相遇，缘于奇妙的缘分，</span><br>
+                <span class="say"> </span><br>
+                <span class="say"> 你我的相爱，应是上天的安排，</span><br>
+                <span class="say"> </span><br>
+                <span class="say"> 就算是被你虐，笑容也会从我的心底溢出。</span><br>
+                <span class="say"> </span><br>
+                <span class="say"> 我要用我的一生去好好爱你。</span><br>
+                <span class="say"> </span><br>
+                <span class="say"> 你来的日子里，甜蜜是藏不住的。</span><br>
+                <span class="say"> </span><br>
+                <span class="say"> 如果天天都能看到你，</span><br>
+                <span class="say"> </span><br>
+                <span class="say"> 我感觉我会幸福到死。</span><br>
+                <span class="say"> </span><br>
+                <span class="say"> 人生路上有你真好！
+						<span class="say"> </span><br>
+                        <span class="say"><span class="space"></span> --成天儿黄-- </span>
+            </div>
+        </div>
+        <div id="clock-box">
+            慧哲儿陶<span class="STYLE1">与</span> 成天儿黄 <span class="STYLE1">已经相❤️了</span>
+            <div id="clock"></div>
+        </div>
+        <canvas id="canvas" width="1100" height="680"></canvas>
+    </div>
+
+</div>
 
 
 
-    <script type="text/javascript">
-        function check(obj){
-            switch (obj)
-            {
-                case "EE":
-                    window.open("http://ee.sjtu.edu.cn/EN/Default.aspx");
-                    break;
-                case "SKL":
-                    window.open("http://loct.sjtu.edu.cn/CN/Default.aspx");
-                    break;
-                case "front":
-                    window.open("http://front.sjtu.edu.cn/");
-                    break;
-                case "IEEE":
-                    window.open("http://ieeexplore.ieee.org/Xplore/home.jsp");
-                    break;
-                case "OSA":
-                    window.open("http://www.opticsinfobase.org/china/");
-                    break;
-                case "Nature_Photonics":
-                    window.open("http://www.nature.com/nphoton/index.html");
-                    break;
+<script>
+    (function(){
+        var canvas = $('#canvas');
+
+        if (!canvas[0].getContext) {
+            $("#error").show();
+            return false;
+        }
+
+        var width = canvas.width();
+        var height = canvas.height();
+
+        canvas.attr("width", width);
+        canvas.attr("height", height);
+
+        var opts = {
+            seed: {
+                x: width / 2 - 20,
+                color: "rgb(190, 26, 37)",
+                scale: 2
+            },
+            branch: [
+                [535, 680, 570, 250, 500, 200, 30, 100, [
+                    [540, 500, 455, 417, 340, 400, 13, 100, [
+                        [450, 435, 434, 430, 394, 395, 2, 40]
+                    ]],
+                    [550, 445, 600, 356, 680, 345, 12, 100, [
+                        [578, 400, 648, 409, 661, 426, 3, 80]
+                    ]],
+                    [539, 281, 537, 248, 534, 217, 3, 40],
+                    [546, 397, 413, 247, 328, 244, 9, 80, [
+                        [427, 286, 383, 253, 371, 205, 2, 40],
+                        [498, 345, 435, 315, 395, 330, 4, 60]
+                    ]],
+                    [546, 357, 608, 252, 678, 221, 6, 100, [
+                        [590, 293, 646, 277, 648, 271, 2, 80]
+                    ]]
+                ]]
+            ],
+            bloom: {
+                num: 700,
+                width: 1080,
+                height: 650,
+            },
+            footer: {
+                width: 1200,
+                height: 5,
+                speed: 10,
             }
         }
-    </script>
-    <!----></body>
-@endsection
+
+        var tree = new Tree(canvas[0], width, height, opts);
+        var seed = tree.seed;
+        var foot = tree.footer;
+        var hold = 1;
+
+        canvas.click(function(e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            if (seed.hover(x, y)) {
+                hold = 0;
+                canvas.unbind("click");
+                canvas.unbind("mousemove");
+                canvas.removeClass('hand');
+            }
+        }).mousemove(function(e){
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            canvas.toggleClass('hand', seed.hover(x, y));
+        });
+
+        var seedAnimate = eval(Jscex.compile("async", function () {
+            seed.draw();
+            while (hold) {
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canScale()) {
+                seed.scale(0.95);
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canMove()) {
+                seed.move(0, 2);
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+        }));
+
+        var growAnimate = eval(Jscex.compile("async", function () {
+            do {
+                tree.grow();
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canGrow());
+        }));
+
+        var flowAnimate = eval(Jscex.compile("async", function () {
+            do {
+                tree.flower(2);
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canFlower());
+        }));
+
+        var moveAnimate = eval(Jscex.compile("async", function () {
+            tree.snapshot("p1", 240, 0, 610, 680);
+            while (tree.move("p1", 500, 0)) {
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+            foot.draw();
+            tree.snapshot("p2", 500, 0, 610, 680);
+
+            // 会有闪烁不得意这样做, (＞﹏＜)
+            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+            canvas.css("background", "#ffe");
+            $await(Jscex.Async.sleep(300));
+            canvas.css("background", "none");
+        }));
+
+        var jumpAnimate = eval(Jscex.compile("async", function () {
+            var ctx = tree.ctx;
+            while (true) {
+                tree.ctx.clearRect(0, 0, width, height);
+                tree.jump();
+                foot.draw();
+                $await(Jscex.Async.sleep(25));
+            }
+        }));
+
+        var textAnimate = eval(Jscex.compile("async", function () {
+            var together = new Date();
+            together.setFullYear(2019, 09, 25); 			//时间年月日
+            together.setHours(21);						//小时
+            together.setMinutes(1);					//分钟
+            together.setSeconds(0);					//秒前一位
+            together.setMilliseconds(2);				//秒第二位
+
+            $("#code").show().typewriter();
+            $("#clock-box").fadeIn(500);
+            while (true) {
+                timeElapse(together);
+                $await(Jscex.Async.sleep(1000));
+            }
+        }));
+
+        var runAsync = eval(Jscex.compile("async", function () {
+            $await(seedAnimate());
+            $await(growAnimate());
+            $await(flowAnimate());
+            $await(moveAnimate());
+
+            textAnimate().start();
+
+            $await(jumpAnimate());
+        }));
+
+        runAsync().start();
+    })();
+</script>
+
+</body>
+</html>
