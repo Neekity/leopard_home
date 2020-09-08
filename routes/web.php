@@ -55,16 +55,9 @@ Route::get('resource/search','ResourceController@search');
 
 Route::get('labbook/search','LabBookController@search');
 
-Route::get('yulaoshi',function (){
-    return view('testRole');
-});
-
-Route::get('yulaoshi/testA',function (){
-    return view('yulaoshi.testA');
-});
 
 Route::get('time',function (){
   return view('welcome');
 });
 
-Route::get('yulaoshi/prize','PrizeController@index');
+Route::get('prize/prize','PrizeController@index');
