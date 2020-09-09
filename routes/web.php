@@ -17,15 +17,14 @@ Auth::routes();
 Route::resource('users', 'UserController');
 Route::middleware('superRole')->group(function (){
 
-
     Route::resource('roles', 'RoleController');
 
     Route::resource('permissions', 'PermissionController');
 });
 
-Route::get('/', function (){
+Route::get('/love', function (){
     return view('home');
-})->name('home');
+})->name('love');
 
 Route::post('myApi/department','ApiController@department');
 

@@ -10,6 +10,6 @@ class PrizeController
 {
     public function index(){
         $prizes = Prize::all();
-        return view('yulaoshi.prize',['prizes'=>$prizes]);
+        return view('prize.prize',['prizes'=>$prizes]);
     }
 }

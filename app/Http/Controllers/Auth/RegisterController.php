@@ -69,13 +69,4 @@ class RegisterController extends Controller
             'password' => $data['password'],
         ]);
     }
-
-    public function showRegistrationForm()
-    {
-        return redirect('login');
-    }
-    public function register(Request $request)
-    {
-        abort(404);
-    }
 }

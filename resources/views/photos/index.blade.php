@@ -1,5 +1,3 @@
-
-
 @extends('layouts.header')
 @section('content')
     <head>

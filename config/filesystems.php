@@ -45,7 +45,7 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => '/data/www/resources',
+            'root' => '/var/www/resources/photo',
         ],
 
         'public' => [
