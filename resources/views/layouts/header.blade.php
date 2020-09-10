@@ -1,4 +1,4 @@
-<title>肖家军</title>
+<title>爱的小巢</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
@@ -11,7 +11,7 @@
     <ul class="title-area">
         <li class="name">
             <!-- 如果你不需要标题或图标可以删掉它 -->
-            <h1><a href="/">肖家军</a></h1>
+            <h1><a href="/">爱的小巢</a></h1>
         </li>
         <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。
         如果需要只显示图片，可以删除 "Menu" 文本 -->
@@ -20,21 +20,16 @@
 
     <section class="top-bar-section">
         <ul class="left">
-            <li><a href="/student/lab">学生主页</a></li>
-            <li><a href="/photos"> 照片分享</a></li>
             @if(!Auth::guest())
+                <li><a href="/">Love</a></li>
+                <li><a href="/photos"> 点滴记忆</a></li>
                 <li><a href="/resources">资源上传</a></li>
-                <li><a href="/papers">论文列表</a></li>
-                <li><a href="/labbooks">书籍管理</a></li>
-                <li><a href="/tools">仪器借阅</a></li>
             @endif
 
             @if(!Auth::guest() and Auth::user()->hasAnyRole('超级管理员'))
             <li><a href="users">用户</a></li>
                 <li><a href="permissions">权限</a></li>
                 <li><a href="roles">角色</a></li>
-                <li><a href="informations">学生信息</a></li>
-
             @endif
 
 

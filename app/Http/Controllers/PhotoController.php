@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class PhotoController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +18,9 @@ class PhotoController extends Controller
      */
     public function index()
     {
-        $photos=Resource::where('fileType','=','jpg')->get();
+        $photos=Resource::query()->where(function ($query){
+            $query->whereIn('fileType',['jpg','jpeg','png']);
+        })->get();
         return view('photos.index',['photos'=>$photos]);
     }
 

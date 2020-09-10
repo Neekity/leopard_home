@@ -22,41 +22,41 @@ Route::middleware('superRole')->group(function (){
     Route::resource('permissions', 'PermissionController');
 });
 
-Route::get('/love', function (){
+Route::get('/', function (){
     return view('home');
-})->name('love');
+})->name('love')->middleware('auth');
 
 Route::post('myApi/department','ApiController@department');
 
 Route::resource('posts', 'PostController');
 
-Route::resource('papers', 'PaperController');
+//Route::resource('papers', 'PaperController');
 
 Route::resource('resources', 'ResourceController');
 
-Route::resource('informations', 'InformationController');
+//Route::resource('informations', 'InformationController');
 
 Route::resource('photos', 'PhotoController');
 
-Route::resource('labbooks', 'LabBookController');
+//Route::resource('labbooks', 'LabBookController');
 
 Route::get('/test','PermissionController@getName');
 
-Route::get('student/lab','StudentController@lab');
+//Route::get('student/lab','StudentController@lab');
 
-Route::get('student/index','StudentController@index');
+//Route::get('student/index','StudentController@index');
 
-Route::get('student/show/{email}','StudentController@jump');
+//Route::get('student/show/{email}','StudentController@jump');
 
 Route::post('upload','UploadFileController@upload')->name('upload');
 
 Route::get('resource/search','ResourceController@search');
 
-Route::get('labbook/search','LabBookController@search');
+//Route::get('labbook/search','LabBookController@search');
 
 
 Route::get('time',function (){
   return view('welcome');
 });
-
-Route::get('prize/prize','PrizeController@index');
+    
+//Route::get('prize/prize','PrizeController@index');

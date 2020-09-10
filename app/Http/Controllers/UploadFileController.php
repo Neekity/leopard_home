@@ -36,7 +36,7 @@ class UploadFileController extends Controller
                 $type = $file->getClientMimeType();
                 //临时绝对路径
                 $realPath = $file->getRealPath();
-                $filename = uniqid() . '.' . $ext;
+                $filename = 'images/'.uniqid() . '.' . $ext;
                 //nginx给出相应的配置
                 $bool     = Storage::disk('local')->put($filename, file_get_contents($realPath));
                 //判断是否上传成功

@@ -2,7 +2,7 @@
 @section('content')
     <head>
         <meta charset="UTF-8" />
-        <title>肖家军图片集</title>
+        <title>点滴</title>
         <style>
             *{margin: 0; padding: 0; list-style: none; border: none;}
             div{
