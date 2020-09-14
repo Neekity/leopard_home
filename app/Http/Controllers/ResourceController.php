@@ -2,42 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Paper;
 use App\Models\Resource;
+use App\Services\ResourceServices;
+use App\Services\Tables\ResourcesTableContract;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use DB;
+
 class ResourceController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth');
     }
-    /**
-     * 关键字查询
-     *
-     * @param \Illuminate\Http\Request $request
-     *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function search(Request $request){
-        $keyword='%'.$request['keyword'].'%';
-//        $resources = Resource::where('fileName','like',$keyword)->paginate(999999);
-        $resources = Resource::where('fileName','like',$keyword)->paginate(3);
 
-        return view('resources.index',['resources'=>$resources,'keyword'=>$keyword]);
-
-    }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function index(Request $request, ResourcesTableContract $table)
     {
-        $resources = Resource::paginate(5);
+        $data = ResourceServices::list($request->all())->paginate(20);
 
-        return view('resources.index',['resources'=>$resources,'keyword'=>'']);
+        return $table->setData($data)->renderOn('resources.index');
     }
 
     /**
@@ -100,11 +83,9 @@ class ResourceController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * @param $id
      *
-     * @param int $id
-     *
-     * @return \Illuminate\Http\Response
+     * @return array
      */
     public function destroy($id)
     {
@@ -112,14 +93,10 @@ class ResourceController extends Controller
         if (auth()->user()->hasAnyRole('超级管理员')) {
             Storage::disk('local')->delete($resource->fileUrl);
             $resource->delete();
-            Paper::where('fileName','=',$resource->fileUrl)->delete();
-            return redirect()->route('resources.index')
-                ->with('flash_message',
-                    '成功删除！');
+
+            return $this->ajaxSuccess([], '删除成功！');
         } else {
-            return redirect()->route('resources.index')
-                ->with('flash_message',
-                    '您不是超级管理员，无法删除此项！');
+            return $this->ajaxError([], '删除失败！');
         }
     }
 }

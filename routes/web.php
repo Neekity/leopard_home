@@ -37,6 +37,7 @@ Route::resource('resources', 'ResourceController');
 //Route::resource('informations', 'InformationController');
 
 Route::resource('photos', 'PhotoController');
+Route::resource('videos', 'VideoController');
 
 //Route::resource('labbooks', 'LabBookController');
 
@@ -50,13 +51,13 @@ Route::get('/test','PermissionController@getName');
 
 Route::post('upload','UploadFileController@upload')->name('upload');
 
-Route::get('resource/search','ResourceController@search');
+
 
 //Route::get('labbook/search','LabBookController@search');
 
 
-Route::get('time',function (){
+Route::get('welcome',function (){
   return view('welcome');
 });
-    
+
 //Route::get('prize/prize','PrizeController@index');

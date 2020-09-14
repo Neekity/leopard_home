@@ -1,7 +1,10 @@
 /node_modules
 /public/hot
+/public/nova
 /public/storage
 /storage/*.key
 /vendor
 .idea/
 /resources/photo
+.DS_Store
+/modules

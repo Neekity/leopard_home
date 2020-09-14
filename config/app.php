@@ -177,6 +177,8 @@ return [
         Spatie\Permission\PermissionServiceProvider::class,
         App\Providers\ComposerServiceProvider::class,
         AetherUpload\AetherUploadServiceProvider::class,
+
+        App\Providers\AppTableProvider::class,
     ],
 
     /*
